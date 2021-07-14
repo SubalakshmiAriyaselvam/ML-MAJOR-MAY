@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 st.title('Sentiment_Analyzer - Tweet_Reviews')
-test_model = joblib.load('Sentiment_Analyser')
+test_model = joblib.load('Sentiment_Analyzer')
 ip = st.text_input('Enter your message')
 op = test_model.predict([ip])
 if st.button('Predict'):
