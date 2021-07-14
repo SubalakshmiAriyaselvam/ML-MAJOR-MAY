@@ -1,8 +1,12 @@
 import streamlit as st
 import joblib
-model = joblib.load('Sentiment_Analysis_major.ipynb')
-st.title('Sentiment Analyser')
-ip = st.text_input('Enter your message:')
-op = model.predict([ip])
+st.title('Sentiment_Analyzer - Tweet_Reviews')
+test_model = joblib.load('Sentiment_Analyser')
+ip = st.text_input('Enter your message')
+op = test_model.predict([ip])
 if st.button('Predict'):
-  st.title(op[0])  
+  st.title(op[0])
+if (op==0):
+  st.title('POSITIVE')
+else :
+  st.title('NEGATIVE')

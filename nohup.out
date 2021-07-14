@@ -1,0 +1,40 @@
+2021-07-14 15:18:52.331 Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/streamlit/script_runner.py", line 349, in _run_script
+    exec(code, module.__dict__)
+  File "/content/app.py", line 4, in <module>
+    test_model = joblib.load('Sentiment_Analyzer')
+  File "/usr/local/lib/python3.7/dist-packages/joblib/numpy_pickle.py", line 577, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Sentiment_Analyzer'
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.2:8501
+  External URL: http://34.91.193.114:8501
+
+2021-07-14 15:19:40.561 Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/streamlit/script_runner.py", line 349, in _run_script
+    exec(code, module.__dict__)
+  File "/content/app.py", line 4, in <module>
+    test_model = joblib.load('Sentiment_Analyzer')
+  File "/usr/local/lib/python3.7/dist-packages/joblib/numpy_pickle.py", line 577, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Sentiment_Analyzer'
+
+2021-07-14 15:19:57.570 Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/streamlit/script_runner.py", line 349, in _run_script
+    exec(code, module.__dict__)
+  File "/content/app.py", line 4, in <module>
+    test_model = joblib.load('Sentiment_Analyzer')
+  File "/usr/local/lib/python3.7/dist-packages/joblib/numpy_pickle.py", line 577, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Sentiment_Analyzer'
+
+2021-07-14 15:20:39.190 Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/streamlit/script_runner.py", line 349, in _run_script
+    exec(code, module.__dict__)
+  File "/content/app.py", line 6, in <module>
+    op = model.predict([ip])
+NameError: name 'model' is not defined
+
